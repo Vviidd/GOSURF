@@ -31,8 +31,23 @@ $(function () {
         breakpoint: 1385,
         settings: {
           slidesToShow: 3,
+          arrows: false,
         }
       },
+      {
+        breakpoint: 961,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
     ]
   });
 
@@ -42,6 +57,20 @@ $(function () {
     arrows: false,
     asNavFor: '.surf-slider',
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 961,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $('.holder__slider, .shop__slider').slick({
@@ -49,6 +78,14 @@ $(function () {
     fade: true,
     prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="">',
     nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="">',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 
   $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg"></div><div class="quantity-button quantity-down"><img src="img/minus.svg"></div></div>').insertAfter('.quantity input');
@@ -118,17 +155,17 @@ $(function () {
 
   });
 
-//   $document.getElementById('dateFolder').innerHTML = day + "." + month + "." + year;
-//   temp_date = new Date();
-//   day = temp_date.getDate();
-//   month = temp_date.getMonth() + 1;
-//   year = temp_date.getYear();
-//   if (day < 10) {
-//     day = "0" + day;
-//   }
-//   if (month < 10) {
-//     month = "0" + month;
-//   }
+  //   $document.getElementById('dateFolder').innerHTML = day + "." + month + "." + year;
+  //   temp_date = new Date();
+  //   day = temp_date.getDate();
+  //   month = temp_date.getMonth() + 1;
+  //   year = temp_date.getYear();
+  //   if (day < 10) {
+  //     day = "0" + day;
+  //   }
+  //   if (month < 10) {
+  //     month = "0" + month;
+  //   }
 
 });
 
