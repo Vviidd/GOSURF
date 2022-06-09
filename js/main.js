@@ -15,7 +15,7 @@ $(function () {
     responsive: [
       {
         breakpoint: 961,
-        settings: "unslick"
+        settings: "unslick",
       },
     ]
   });
@@ -148,12 +148,14 @@ $(function () {
       scrollTop: $(href).offset().top
     }, {
       duration: 400,
-      easing: "linear" // по умолчанию «swing»
+      easing: "linear",
     });
 
     // return false;
 
   });
+
+
 
   //   $document.getElementById('dateFolder').innerHTML = day + "." + month + "." + year;
   //   temp_date = new Date();
